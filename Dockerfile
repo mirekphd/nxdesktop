@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y vim xterm pulseaudio cups
 RUN apt-get install -y mate-desktop-environment-core
 RUN apt-get install -y wget chromium-browser remmina htop iperf sudo && \
-        wget -O /nomachine.deb http://download.nomachine.com/download/5.1/Linux/nomachine_5.1.44_1_amd64.deb
+        wget -O http://download.nomachine.com/download/6.0/Linux/nomachine_6.0.78_1_amd64.deb
 
 RUN dpkg -i /nomachine.deb
 
